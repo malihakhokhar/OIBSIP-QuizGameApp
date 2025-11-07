@@ -1,75 +1,83 @@
-🎯 OIBSIP - Quiz Game App
+OIBSIP – Quiz Game App
+Overview
 
-An interactive Quiz Game Android Application built as part of the Oasis Infobyte Internship Program (OIBSIP).
-This app allows users to sign up, log in, and participate in exciting quizzes. The scores and questions are managed through Firebase Realtime Database for smooth, real-time updates.
+The OIBSIP Quiz Game App is an interactive Android application developed as part of the Oasis Infobyte Internship Program.
+This app allows users to sign up, log in, and play quizzes stored in Firebase Realtime Database.
+Scores and user data are stored securely with Firebase Authentication and Database integration.
 
-📱 Features
+Features
+Welcome Activity
 
-Welcome Activity:
-Displays a splash or welcome screen to introduce users to the app.
+Displays the welcome screen when the app starts.
 
-Sign Up Activity:
-New users can create an account using their email and password. Authentication is managed through Firebase Authentication.
+Sign Up Activity
 
-Login Activity:
-Existing users can securely log in to access their quizzes.
+Allows new users to register using an email and password.
 
-Main Activity:
-Acts as the app’s home screen — users can select quiz categories or start playing.
+Uses Firebase Authentication for user account creation.
 
-Quiz Activity:
-Displays multiple-choice questions fetched from the Firebase Realtime Database.
+Login Activity
 
-Each question has four options.
+Enables registered users to log in securely.
 
-Users receive instant feedback after answering.
+Verifies credentials with Firebase Authentication.
 
-Result Activity:
-Shows the user’s total score after completing the quiz.
+Main Activity
 
-The score is also saved in the Firebase Realtime Database for record keeping.
+Acts as the home page where users can start the quiz.
 
-🔥 Firebase Integration
+Quiz Activity
 
-Firebase Authentication:
-Used for user registration and login.
-Ensures data privacy and secure access.
+Displays multiple-choice questions fetched from Firebase Realtime Database.
 
-Firebase Realtime Database:
-Used to:
+Users can select answers, and the app calculates the score in real time.
 
-Store quiz questions and answers
+Result Activity
 
-Save users’ scores and progress in real-time
+Shows the user’s final score after quiz completion.
 
-🛠️ Tech Stack
+The score is stored in Firebase Realtime Database for record keeping.
 
-Language: Kotlin
+Firebase Integration
+Firebase Authentication
 
-Database: Firebase Realtime Database
+Handles user registration and login securely.
 
-Authentication: Firebase Auth
+Firebase Realtime Database
 
-IDE: Android Studio
+Stores quiz questions, options, correct answers, and user scores.
 
-Architecture: MVVM (optional, if you used it)
+Updates data in real time, allowing smooth interaction between users and the app.
 
-🚀 How to Run the Project
+Tech Stack
+Component	Technology Used
+Language	Kotlin
+Database	Firebase Realtime Database
+Authentication	Firebase Authentication
+IDE	Android Studio
+Architecture	MVVM (optional)
+How to Run the Project
 
-Clone this repository:
+Clone the Repository
 
-git clone https://github.com/malihakhokhar/OIBSIP-QuizGameApp.git
+git clone https://github.com/your-username/OIBSIP-QuizGameApp.git
 
 
-Open the project in Android Studio.
+Open in Android Studio
 
-Connect your project to Firebase:
+Open the project folder in Android Studio.
 
-Add your google-services.json file inside the app/ directory.
+Let Gradle sync automatically.
 
-Enable Authentication (Email/Password) in Firebase Console.
+Connect Firebase
 
-Create a Realtime Database and structure it as follows:
+Download the google-services.json file from Firebase Console.
+
+Place it in the /app folder of your project.
+
+Enable Email/Password Authentication in Firebase.
+
+Create a Realtime Database and structure it like this:
 
 {
   "questions": {
@@ -91,37 +99,42 @@ Create a Realtime Database and structure it as follows:
 }
 
 
-Sync Gradle and run the app on an emulator or device.
+Run the App
 
-📊 Output Overview
-Activity	Description
-Welcome	Intro or splash screen
-Sign Up	Register a new user
-Login	Authenticate user with Firebase
-Main	Start or choose quiz
-Quiz	Play and answer questions
-Result	View and save score
-📸 Screenshots (optional)
+Choose an emulator or Android device.
 
-Add screenshots here once available:
+Click Run ▶️ to launch the app.
+
+App Flow
+Screen	Description
+Welcome	Displays welcome or splash screen
+Sign Up	User registration
+Forget Password
+Login	User authentication
+Main	Quiz start screen
+Quiz	Multiple-choice questions
+Result	Final score display
+Output Preview
+
+Add screenshots of the app here (optional):
 
 Welcome Screen
-<img width="419" height="739" alt="7" src="https://github.com/user-attachments/assets/f6fcef53-434d-41ab-8813-67b451384491" />
+<img width="419" height="739" alt="7" src="https://github.com/user-attachments/assets/cd5abe20-be8d-4bc8-b745-96821b7f003e" />
 
-Login & Signup
-<img width="388" height="685" alt="6" src="https://github.com/user-attachments/assets/fb93bd6d-ced6-4844-b698-0da4e2d4a463" />
-<img width="378" height="661" alt="4" src="https://github.com/user-attachments/assets/a9563033-45ec-4ac2-b274-ccd98869a15c" />
-
-Forget Password
-<img width="410" height="732" alt="5" src="https://github.com/user-attachments/assets/fc45030e-28ca-4d60-816b-70e828e25c20" />
+Login Screen
+<img width="378" height="661" alt="4" src="https://github.com/user-attachments/assets/31b99876-5b10-40cf-bed6-11476b22e36c" />
 
 Quiz Screen
-<img width="380" height="667" alt="3" src="https://github.com/user-attachments/assets/9ef5ddbd-2eaa-483f-a376-7b37f5c588b5" />
+<img width="380" height="667" alt="3" src="https://github.com/user-attachments/assets/f447eb52-2a94-4b36-a67e-28d82d177e97" />
 
 Result Screen
-<img width="417" height="735" alt="1" src="https://github.com/user-attachments/assets/bb14ff09-2bd3-4508-89db-2d181e50b1df" />
+<img width="417" height="735" alt="1" src="https://github.com/user-attachments/assets/0273ac88-39dc-46dd-8a9e-82ed65becf18" />
 
-👩‍💻 Developed By
+Developer
 
 Maliha Khokhar
 Android Developer | OIBSIP Intern
+GitHub: https://github.com/malihakhokhar
+Acknowledgment
+
+Developed as part of the Oasis Infobyte Internship Program (OIBSIP) to enhance skills in Android development, Firebase integration, and user authentication.
